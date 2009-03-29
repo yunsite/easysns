@@ -1,4 +1,5 @@
-﻿淘宝:<br>
-鹅鹅鹅鹅鹅鹅鹅鹅鹅恩恩鹅鹅<br>
+﻿请修改 \application\app\ishopcart\controller\pay.txt 以添加您的支付说明.<br/>
+淘宝:<br>
+-------------<br>
 银行账号:<br>
-鹅鹅鹅鹅鹅鹅鹅恩恩
+-----------
