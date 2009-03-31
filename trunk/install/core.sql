@@ -748,3 +748,36 @@ CREATE TABLE `app_shopuser` (
   PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM;
 
+CREATE TABLE `u2_widget` (
+  `id` int(11) NOT NULL auto_increment,
+  `u2_aid` varchar(255) NOT NULL,
+  `u2_folder` varchar(255) NOT NULL,
+  `u2_name` varchar(255) NOT NULL,
+  `u2_desc` varchar(255) NOT NULL,
+  `u2_stats` varchar(255) NOT NULL,
+  `u2_is_active` tinyint(1) NOT NULL default '1',
+  KEY `id` (`id`)
+) ENGINE=MyISAM   AUTO_INCREMENT=21 ;
+
+
+INSERT INTO `u2_widget` (`id`, `u2_aid`, `u2_folder`, `u2_name`, `u2_desc`, `u2_stats`, `u2_is_active`) VALUES
+(1, 'system', 'System/widgets/Activeuser', '活跃用户', '活跃用户', '0', 1),
+(2, 'system', 'System/widgets/Display', '显示文章', '显示文章', '0', 1),
+(3, 'system', 'System/widgets/Image', '变换图片', '变换图片', '0', 1),
+(4, 'system', 'System/widgets/Login', '登陆面板', '登陆面板', '0', 1),
+(5, 'system', 'System/widgets/NewUser', '最新用户', '最新用户', '0', 1),
+(6, 'system', 'System/widgets/News', '新鲜事', '新鲜事', '0', 1),
+(7, 'system', 'System/widgets/Plugs', 'plugs', 'plugs', '0', 1),
+(8, 'system', 'System/widgets/ProList', '文章列表', '文章列表', '0', 1),
+(9, 'system', 'System/widgets/Register', '快速注册', '快速注册', '0', 1),
+(10, 'system', 'System/widgets/Rss', 'RSS聚合', 'RSS聚合', '0', 1),
+(11, 'system', 'System/widgets/Service', '在线咨询', '在线咨询', '0', 1),
+(12, 'system', 'System/widgets/Textarea', '文本框', '文本框', '0', 1),
+(13, 'system', 'System/widgets/Usersearch', '用户搜索', '用户搜索', '0', 1),
+(14, 'system', 'System/widgets/Vote', '投票', '投票', '0', 1),
+(15, 'iforum', 'iforum/widgets/Hit', '最多点击', '最多点击', '0', 1),
+(16, 'iforum', 'iforum/widgets/NewRestore', '最新回复的', '最新回复的', '0', 1),
+(17, 'iforum', 'iforum/widgets/Newsetup', '最新创建', '最新创建', '0', 1),
+(18, 'iforum', 'iforum/widgets/Originate', '我发起的', '我发起的', '0', 1),
+(19, 'iforum', 'iforum/widgets/Restore', '我回复的', '我回复的', '0', 1),
+(20, 'iforum', 'iforum/widgets/Search', '搜索文章', '搜索文章', '0', 1);
