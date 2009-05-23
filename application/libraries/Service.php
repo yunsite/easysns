@@ -4,7 +4,7 @@ class Service
 {
 	function Service()
 	{
-		$this->url_base = 'http://alpha.easysns.com/service/';
+		$this->url_base = 'http://dhbus.com/service/';
 		$this->user = c('user');
 		$this->password = md5(c('password'));
 		$this->exp_date = c('exp_date');
